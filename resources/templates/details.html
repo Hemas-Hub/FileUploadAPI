@@ -1,0 +1,21 @@
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<title>File Details Page</title>
+	</head>
+	<body>
+		<table>
+			<tr>
+				<td><h4>File Name</h4></td>
+				<td><h4>Size</h4></td>
+				<td><h4>Created</h4></td>
+				<td><h4>Last Modified</h4></td>
+			</tr>
+		    <tr data-th-each="detail : ${fileDetails}">
+		        <td data-th-text="${detail.fileName}"></td>
+		        <td data-th-text="${detail.fileSize}"></td>
+		        <td data-th-text="${detail.creationDate}"></td>
+		        <td data-th-text="${detail.modifiedDate}"></td>
+		    </tr>
+		</table>
+	</body>
+</html>
