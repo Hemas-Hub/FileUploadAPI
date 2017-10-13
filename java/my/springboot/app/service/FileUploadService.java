@@ -18,9 +18,6 @@ import org.springframework.web.multipart.MultipartFile;
 @Component
 public class FileUploadService {
 	
-	@Autowired
-	MyFile myFile;
-	
 	private static final String FILE_SYS_DIR = "//Users//...//TargetFolder";
 	private final String SUCCS_MSG = "File upload successful !";
 	private final String ERROR_MSG = "Error Occured !";
